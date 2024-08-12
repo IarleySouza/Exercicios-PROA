@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando camadas relativas</title>
+    <style>
+        #camada1 {
+            position: relative;
+            width: 160px;
+            height: 100px;
+            background-color: #0000ff;
+            text-align: center;
+            float: left;
+        }
+        #camada2 {
+            position: relative;
+            width: 640px;
+            height: 100px;
+            background-color: #ff0000;
+            text-align: center;
+            float: left;
+        }
+        #camada3 {
+            position: relative;
+            width: 800px;
+            height: 40px;
+            background-color: #0f0;
+            text-align: center;
+            clear: left; /*para o alinhamento do float, ele quebra a linha quando estiver um do lado do outro*/
+        }
+        #camada4 {
+            position: relative;
+            width: 780px;
+            height: 380px;
+            background-color: #00e1ff;
+            border: 10px solid red;
+            text-align: center;
+            float: left;
+        }
+        #camada5 {
+            position: relative;
+            width: 800px;
+            height: 50px;
+            background-color: #98bbc0;
+            text-align: center;
+            float: left;
+        }
+        #fundo {
+            position: relative;
+            width: 800px;
+            height: auto;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="fundo">
+        <div id="camada1">
+            conteúdo da camada 1
+        </div>
+        <div id="camada2">
+            conteúdo da camada 2
+        </div>
+        <div id="camada3">
+            conteúdo da camada 3
+        </div>
+        <div id="camada4">
+            conteúdo da camada 4
+        </div>
+        <div id="camada5">
+            conteúdo da camada 5
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+#camada1 {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    background-color: rgb(40, 105, 180);
+    width: 900px;
+    height: 100px;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 1.5em;
+}
+#camada2 {
+    position: absolute;
+    top: 110px;
+    left: 220px;
+    background-color: gray;
+    width: 650px;
+    height: 400px;
+    z-index: 2;
+}
+#camada3 {
+    position: absolute;
+    left: 100px;
+    top: 110px;
+    background-color: rgb(104, 51, 154);
+    width: 900px;
+    height: 400px;
+}
+#camada4 {
+    position: absolute;
+    top: 110px;
+    left: 875px;
+    background-color: #ffffff;
+    width: 120px;
+    height: 100px;
+    z-index: 3;
+}
+#camada5 {
+    position: absolute;
+    top: 213px;
+    left: 875px;
+    background-color: #ffffff;
+    z-index: 3;
+    width: 120px;
+    height: 100px;
+}
+#camada6 {
+    position: absolute;
+    top: 340px;
+    left: 700px;
+    background: url(../image/Photo-Camera-PNG-File.png) no-repeat;
+    background-size: cover;
+    z-index: 4;
+    width: 200px;
+    height: 200px;
+
+}
+#camada7 {
+    position: absolute;
+    left: 100px;
+    top: 510px;
+    background-color: #0044ff;
+    z-index: 3;
+    height: 40px;
+    width: 900px;
+}

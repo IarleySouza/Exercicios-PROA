@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+#cabecalho {
+    background-color: #9acd32;
+    width: 900px;
+    height: 60px;
+    text-align: center;
+}
+#lado_esquerdo {
+    position: relative;
+    background-color: #00ffff;
+    width: 200px;
+    height: 400px;
+    float: left;
+}
+#esquerdo {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    background-color: #ffffff;
+    width: 170px;
+    height: 170px;
+    z-index: 2;
+}
+#baixo {
+    position: absolute;
+    top: 200px;
+    left: 15px;
+    background-color: #ffffff;
+    width: 170px;
+    height: 170px;
+    z-index: 3;
+}
+#lado_direito {
+    position: relative;
+    float: left;
+    background-color: #8a2be2;
+    width: 700px;
+    height: 400px;
+}
+#article > p {
+    position: absolute;
+    top: 40px;
+    left: 1px;
+    background-color: #ff7f50;
+    width: 678px;
+    height: 100px;
+}
+#rodape {
+    position: relative;
+    background-color: #800000;
+    width: 900px;
+    height: 100px;
+    clear: both;
+    color: #ffffff;
+}
+#article {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    background-color: #f0f8ff;
+    width: 680px;
+    height: 370px;
+
+}
+#article > h1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 680px;
+    background-color: #7fffd4;
+    text-align: center;
+}
+#imagem {
+    position: absolute;
+    background-color: #2f4f4f;
+    top: 160px;
+    left: 1px;
+    width: 678px;
+    height: 200px;
+
+}
+#centralizar {
+    position: relative;
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
