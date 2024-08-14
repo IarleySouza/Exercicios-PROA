@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+main {
+    position: relative;
+    background-color: aqua;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+header {
+    background-color: lawngreen;
+    height: 100px;
+}
+
+p {padding: 10px;}
+
+#section_limao {
+    position: relative;
+    margin-top: 10px;
+    background-color: red;
+    width: 100%;
+    height: 250px;
+    
+}
+#rosa1 {
+    position: relative;
+    float: left;
+    margin: 30px 140px auto;
+    background-color: rgba(102, 51, 153, 0.555);
+    width: 30%;
+    height: 200px;
+}
+#rosa2 {
+    position: relative;
+    background-color: rgba(102, 51, 153, 0.61);
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin: 30px 15px auto;
+}
+#aside_principal {
+    position: relative;
+    background-color: aquamarine;
+    width: 100%;
+    margin-top: 10px;
+    height: 300px;
+}
+.aside{
+    position: relative;
+    float: left;
+    background-color: white;
+    margin: 10px 40px;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+#imagem {
+    margin-top: 10px;
+    background-color: brown;
+    height: 300px;
+}
+
+#aside_segundaria {
+    background-color: yellow;
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+}
+#aside_segundaria > aside#aside2 {
+    background-color: green;
+}
+#aside_segundaria > aside#aside1 {
+    background-color: rgb(28, 28, 90);
+}
+#aside_segundaria > aside {
+    position: relative;
+    float: left;
+    background-color: white;
+    margin: 10px 40px;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    margin: 50px 80px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+}
+
