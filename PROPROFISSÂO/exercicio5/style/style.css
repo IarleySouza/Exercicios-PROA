@@ -64,37 +64,17 @@ p {
     margin: auto;
     background-color: cadetblue;
     width: 95%;
-    height: 100px;
+    height: 125px;
 }
-#primeira {
+#primeira, #segunda, #terceira {
     position: relative;
     color: #fff;
     background-color: gray;
     width: 30%;
     height: 30%;
-    margin: 10px auto;
+    margin: 5px auto;
     float: left;
     margin-left: 13px;
-    text-align: center;
-}
-#segunda {
-    position: relative;
-    color: #fff;
-    background-color: gray;
-    width: 31%;
-    height: 30%;
-    margin: 10px 10px auto;
-    float: left;
-    text-align: center;
-}
-#terceira {
-    position: relative;
-    color: #fff;
-    background-color: gray;
-    width: 30%;
-    height: 30%;
-    margin:10px auto;
-    float: left;
     text-align: center;
 }
 aside {
