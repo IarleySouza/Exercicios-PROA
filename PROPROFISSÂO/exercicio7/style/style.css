@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/* CSS RESET*/
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+p {
+    font-size: 0.8em;
+}
+body{
+	color:#FFF;
+	font-size:30px;
+	text-align:center;
+	font-family:tahoma;
+}
+#fundo{
+	position:relative;
+	width:1000px;
+	height:auto;
+	
+	margin:auto;
+	font-family:verdana;
+	margin-top:30px;
+}
+#titulo{
+	position:relative;
+	width:100%;
+	height:80px;
+	background-color:#000;
+	color:#FFF;
+	text-align:center;
+	font-size:40px;
+	padding-top:20px;
+}
+#menu_acima {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color:#009;
+	height: 30px;
+}
+#menu_acima a {
+	width: 17%;
+	text-align: center;
+	font-size: 15px;
+	text-decoration: none;
+	background-color:#009;
+	color:#fff;
+	padding-top: 5px;
+    transition: 0.5s all;
+}
+#menu_acima a:hover{
+	background-color:#FFF;
+	color:#009;
+    transition: 0.5s all;
+}
+#menu_lateral{
+	position: relative;
+	width: 20%;
+	height: 450px;
+	background-color: #fff;
+	float: left;
+}
+#menu_lateral a{
+	width: 90%;
+	text-align: left;
+	font-size: 15px;
+	text-decoration: none;
+	background-color:#999;
+	color: #fff;
+	padding: 10px;
+	border-bottom: 1px solid #bbb;
+	display: block;
+}
+#menu_lateral a:hover{
+background-color:#000;
+border-color:#F00;
+	}
+	
+#meio{
+	position:relative;
+	width:60%;
+	height:450px;
+	background-color: #fff;
+	float:left;
+	}
+	
+#banner{
+	position:relative;
+	width:20%;
+	height:450px;
+	float:left;
+	background-color: #C9C;
+}
+#banner img{
+	width:100%;
+	height:100%
+}
+
+#rodape{
+	position:relative;
+	width:100%;
+	height:40px;
+	background-color:#000;
+	clear:left;
+	text-align:center;
+	color:#FFF;
+	font-size:30px;
+	padding-top:10px;
+	}
+	
+#titulo2{
+	position:relative;
+	width:95%;
+	margin:auto;
+	height:40px;
+	text-align:center;
+	padding-top:10px;
+	color:#000;
+}
+	
+#imagem{
+	position:relative;
+	width:95%;
+	margin:auto;
+	height:160px;
+	background: url(../image/banner-full-hd\ 1.jpg);
+	background-size:cover;
+	margin-top:10px;
+	}
+
+#texto{
+	position:relative;
+	width:93%;
+	margin:auto;
+	background-color:#CFF;
+	height:80px;
+	text-align:justify;
+	font-size:12px;
+	padding:5px;
+		margin-top:10px;
+		color:#000;
+	}
+	
+#figuras{
+	position:relative;
+	width:95%;
+	margin:auto;
+
+	height:80px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-top:10px;
+}
+
+#figuras div{
+	width:30%;
+	height:100px;
+	background-color:#666;
+}
+#fig1{
+	background: url(../image/sol.jpg);
+	background-size:100%;
+}
+#fig2{
+	background: url(../image/fundo\ 1.jpg);
+	background-size:100%;
+}
+#fig3{
+	background: url(../image/imagem4\ 1.jpg);
+	background-size:100%;
+	}

@@ -5,13 +5,16 @@
     padding: 0px;
     border: 0px;
 }
-main {
-    position: relative;
-    background-color: antiquewhite;
-    width: auto;
-    height: auto;
-    margin: auto;
+#fundo{
+	position:relative;
+	width:1000px;
+	height:auto;
+	
+	margin:auto;
+	font-family:verdana;
+	margin-top:30px;
 }
+
 header {
     width: 100%;
     position: relative;

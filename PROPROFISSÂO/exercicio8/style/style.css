@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    position: relative;
+    background-color: rgb(216, 112, 147);
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+main > * {
+    margin-bottom: 10px;
+}
+header {
+    background-color: lawngreen;
+    height: 200px;
+    background: url(../image/guitarras_header.jpg) no-repeat;
+    background-size: cover;
+    padding-right: 50px;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 200px;
+}
+nav > a {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    height: 10px;
+    text-decoration: none;
+    color: maroon;
+}
+iframe {
+    margin-top: 70px;
+    width: 160%;
+    height: 250px;
+}
+
+#section_limao {
+    position: relative;
+    background-color: red;
+    width: 100%;
+    height: 300px;
+}
+#rosa1 {
+    position: relative;
+    float: left;
+    margin: 30px 140px auto;
+    background-color: #ffffff63;
+    width: 40%;
+    height: 250px;
+}
+#rosa1 > h1, p{
+    color: white;
+    margin: 20px;
+}
+#rosa2 {
+    position: relative;
+    background: url(../image/loja.jpg) no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 250px;
+    float: left;
+    margin: 30px 15px auto;
+}
+#aside_principal {
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+p {
+    color: #000;
+}
+.aside{
+    margin: 28px;
+    width: 20%;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+}
+#aside2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#aside2 > div > img {
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+}
+#aside2 > div > div {
+    display: flex;
+}
+img {
+    width: 200px;
+    height: 150px;
+}
+.aside p {
+    text-align: center;
+}
+#imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: orange;
+    height: 400px;
+    text-align: center;
+}
+
+#aside_segundaria {
+    background-color: #fff;
+    width: 100%;
+    height: 500px;
+}
+#aside_segundaria > aside {
+    position: relative;
+    float: left;
+    margin: 10px 40px;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    margin: 50px 80px;
+}
+#mapa {
+    color: #fff;
+    background-color: #ffffff63;
+    width: 35%;
+    height: 211px;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+}
+footer > p {
+    margin: 1px;
+    font-size: 10px;
+    font-weight: normal;
+}
+h5 {
+    margin: 5px;
+    padding: 5px;
+}
+#final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#final > div > img {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}
+form {
+    margin: 20px 0px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 2px solid hsl(0, 0%, 87%);
+}
+label {
+    font-weight: bold;
+}
+input, textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
