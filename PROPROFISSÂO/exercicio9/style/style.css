@@ -16,7 +16,17 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.links_nav {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12% 0 12%;
+}
 h1 {
     font-family: "Quicksand", sans-serif;
     font-size: 3em;
@@ -27,12 +37,17 @@ body, html {
 }
 #segundo {
     border: 2px solid black;
-    margin-top: 15%;
-    margin-right: 5%;
+    margin-top: 16%;
     width: 400px;
     height: 300px;
     border-radius: 10px;
     background-color: #f6d5c4;
+    font-size: 1.5em;
+}
+
+#segundo > h4 {
+    color: #f08162;
+    text-align: center;
 }
 .imagem {
     position: relative;
@@ -46,41 +61,42 @@ body, html {
 .cart {
     position: absolute;
     background-color: #fff;
-    width: 15vw;
-    height: 30vh;
-    left: 70vw;
-    top: 60vh;
+    width: 17%;
+    height: 35%;
+    left: 75%;
+    top: 63%;
     border-radius: 10px;
     border: 1px solid;
-    box-shadow: 7px 12px black;
+    box-shadow: 5px 6px black;
 }
 .cart img {
     padding: 5px;
+    cursor: pointer;
 }
 .cart > button {
-    background-color: rgb(114, 192, 18);
-    text-decoration: none;
-    text-align: center;
-    margin-left: 43px;
-    height: 55px;
-    height: 25px;
-    border-radius: 20px;
+    background-color: #5e9f0f;
+    color: #fff;
+    margin-left: 35px;
+    width: 70%;
+    height: 12%;
+    border-radius: 6px;
+    border: 0px;
+    cursor: pointer;
 }
-h4 {
-    text-align: center;
-    color: #f08162;
-    font-size: 1.5em;
+.cart > button:hover {
+    background-color: #4f860c;
 }
+
 header {
     display: flex;
     padding: 10px;
     align-items: center;
-    justify-content: space-between;
+    
 }
 
 a {
     text-decoration: none;
-    padding: 10px;
+    padding-right: 20px;
     color: #000;
 }
 
@@ -90,6 +106,10 @@ a {
     margin: 0 10px;
     margin-bottom: 10px;
     text-align: center;
+    cursor: pointer;
+}
+#cor_paragrafo:hover {
+    background-color: #025d63;
 }
 
 #cor_paragrafo {
@@ -102,6 +122,7 @@ a {
     border-top-right-radius: 10px;
     padding: 7px;
     border: 1px solid black;
+    font-size: 15px;
 }
 #text {
     display: flex;
@@ -117,7 +138,8 @@ a {
     margin: 5px 10px;
 }
 #text_fonts {
-    width: 45%;
+    margin-top: 15%;
+    width: 49%;
     gap: 20px;
 }
 #text_fonts p {
@@ -130,11 +152,18 @@ a {
     top: 12%;
 }
 #azul {
-    margin-top: 30px;
+    margin-top: 40px;
     background-color: #007c86;
     width: 140px;
     text-align: center;
     color: #fff;
     height: 60px;
-    font-size: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+#azul:hover {
+    background-color: #01646b;
+    transform: translate(-1px, -2px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.566);
+    transition: all 0.2s;
 }
