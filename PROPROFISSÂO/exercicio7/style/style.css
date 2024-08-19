@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* CSS RESET*/
 *{
 	margin:0;
 	padding:0;
@@ -16,13 +15,12 @@ body{
 	font-family:tahoma;
 }
 #fundo{
-	position:relative;
-	width:1000px;
-	height:auto;
-	
-	margin:auto;
-	font-family:verdana;
-	margin-top:30px;
+	position: relative;
+	width: 90%;
+	height: auto;
+	margin: auto;
+	font-family: verdana;
+	margin-top: 30px;
 }
 #titulo{
 	position:relative;
@@ -35,7 +33,6 @@ body{
 	padding-top:20px;
 }
 #menu_acima {
-	position: relative;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -79,28 +76,25 @@ body{
 #menu_lateral a:hover{
 background-color:#000;
 border-color:#F00;
-	}
-	
-#meio{
-	position:relative;
-	width:60%;
-	height:450px;
+}
+#meio {
+	position: relative;
+	width: 60%;
+	height: 450px;
 	background-color: #fff;
-	float:left;
-	}
-	
+	float: left;
+}
 #banner{
-	position:relative;
-	width:20%;
-	height:450px;
-	float:left;
+	position: relative;
+	width: 20%;
+	height: 450px;
+	float: left;
 	background-color: #C9C;
 }
 #banner img{
-	width:100%;
-	height:100%
+	width: 100%;
+	height: 100%
 }
-
 #rodape{
 	position:relative;
 	width:100%;
@@ -111,53 +105,47 @@ border-color:#F00;
 	color:#FFF;
 	font-size:30px;
 	padding-top:10px;
-	}
-	
+}
 #titulo2{
-	position:relative;
-	width:95%;
-	margin:auto;
-	height:40px;
-	text-align:center;
-	padding-top:10px;
+	position: relative;
+	width: 95%;
+	margin: auto;
+	height: 40px;
+	text-align: center;
+	padding-top: 10px;
 	color:#000;
 }
-	
 #imagem{
-	position:relative;
-	width:95%;
-	margin:auto;
-	height:160px;
+	position: relative;
+	width: 95%;
+	margin: auto;
+	height: 160px;
 	background: url(../image/banner-full-hd\ 1.jpg);
-	background-size:cover;
-	margin-top:10px;
-	}
-
+	background-size: cover;
+	margin-top: 10px;
+}
 #texto{
-	position:relative;
-	width:93%;
-	margin:auto;
+	position: relative;
+	width: 93%;
+	margin: auto;
 	background-color:#CFF;
-	height:80px;
-	text-align:justify;
+	height: 80px;
+	text-align: justify;
 	font-size:12px;
 	padding:5px;
-		margin-top:10px;
-		color:#000;
-	}
-	
+	margin-top:10px;
+	color:#000;
+}
 #figuras{
 	position:relative;
 	width:95%;
 	margin:auto;
-
 	height:80px;
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
 	margin-top:10px;
 }
-
 #figuras div{
 	width:30%;
 	height:100px;
@@ -174,4 +162,74 @@ border-color:#F00;
 #fig3{
 	background: url(../image/imagem4\ 1.jpg);
 	background-size:100%;
+}
+@media screen and (max-width: 480px) {
+	#imagem, #texto, #menu_lateral, #banner {
+		display: none;
 	}
+	#menu_acima {
+		background-color: #fff;
+		display: flex;
+		justify-content: space-between;
+        flex-direction: column;
+        height: 350px;
+    }
+    #menu_acima a {
+        width: 100%;
+        padding: 10px 0; /* Adiciona espaçamento vertical */
+    }
+	#meio {
+		width: 100%;
+		height: auto;
+	}
+	#fundo {
+		width: 98%;
+	}
+	#figuras {
+        flex-direction: column;
+        height: auto;
+		align-items: center;
+    }
+    #figuras div {
+        width: 100%;
+		height: 300px;
+        margin-bottom: 10px;
+    }
+	#fig1, #fig2, #fig3 {
+		background-size: cover;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 720px) {
+	#fundo {
+		width: 95%;
+	}
+	#menu_acima {
+		height: 50px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#menu_acima a {
+		color: yellow;
+		width: 33%;
+	}
+	#menu_lateral, #banner {
+		display: none;
+	}
+	#meio {
+		position:relative;
+		width: 100%;
+	}
+	#fig1{
+		background: url(../image/sol.jpg);
+		background-size: cover;
+	}
+	#fig2{
+		background: url(../image/fundo\ 1.jpg);
+		background-size: cover;
+
+	}
+	#fig3{
+		background: url(../image/imagem4\ 1.jpg);
+		background-size: cover;
+	}
+}
