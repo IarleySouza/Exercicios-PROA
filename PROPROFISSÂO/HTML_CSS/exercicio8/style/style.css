@@ -16,7 +16,9 @@
 }
 
 header {
-    background-color: lawngreen;
+    display: flex;
+    align-items: end;
+    justify-content: end;
     height: 170px;
     background: url(../image/guitarras_header.jpg) no-repeat;
     background-size: cover;
@@ -306,23 +308,20 @@ footer > p {
         width: auto;
         margin: 0px;
     }
-    .header_container{
-        position: absolute;
-        display: block;
-        left: 5%;
-        top: 21%;
+    header {
+        display: flex;
+        align-items: end;
+        justify-content: end;
     }
     nav {
-        width: 0;
-        height: 5%;
-        padding: 0px;
+        padding: 0;
     }
     nav  a {
+        padding: 4px;
         background-color: rgb(255, 255, 255);
         text-decoration: none;
-        width: auto;
-        height: 20px;
-        font-size: 10px;
+        height: 30px;
+        font-size: 11px;
         color: rgb(78, 13, 13);
     }
     nav a:hover {

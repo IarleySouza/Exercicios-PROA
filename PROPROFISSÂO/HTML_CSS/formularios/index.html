@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Cadastro</legend>
+                <label for="inome">Entre com seu nome:</label>
+                <input type="text" name="nome" id="inome" maxlength="50" size="50" placeholder="Digite seu email aqui" required>
+                <br><br>
+                <label for="imail">Entre com seu Email:</label>
+                <input type="email" name="e=mail" id="imail" maxlength="50"
+                size="50" placeholder="Digite seu email aqui" required>
+                <br><br>
+                <label for="isenha">Entre com sua senha:</label>
+                <input type="password" name="senha" id="isenha" placeholder="Digite sua senha aqui" size="50">
+                <br><br>
+                <label for="">Você usa nosso app frequantemente?</label>
+                <input type="radio" name="resp" id="sim"> Sim
+                <input type="radio" name="resp" id="não"> Não
+                <br><br>
+                <label for="">Qual Browser você costuma utilizar?</label>
+                <input type="checkbox" name="opacao" id="" value="fire"> firefox
+                <input type="checkbox" name="opacao2" id="" value="chorm"> Chorme
+                <input type="checkbox" name="opacao3" id="" value="ed"> Edge
+                <input type="checkbox" name="opacao4" id="" value="safa"> Safari
+                <input type="checkbox" name="opacao5" id="" value="oper"> Opera
+                <br><br>
+                <label for="">Selecione uma area de atuação:</label>
+                <select name="opcao" id="">
+                    <option value="">Marketing</option>
+                    <option value="">Comercial</option>
+                    <option value="">vendas</option>
+                    <option value="">Programação</option>
+                    <option value="">Admistração</option>
+                </select>
+                <br><br>
+
+                <label for="inumero">Entre com um numero:</label>
+                <input type="number" name="numero" id="inumero" min="0" max="10" >
+                <br><br>
+                <label for="idata">Selecione uma data</label>
+                <input type="date" name="data" id="idata">
+                <br><br>
+
+                <input type="search" name="" id="#">
+                <label for=""></label>
+                <br><br>
+                <label for="icor">Escolha sua cor:</label>
+                <input type="color" name="" id="icor">
+                <br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                <br><br>
+                <progress value="80" max="100">80%</progress>
+                <br><br>
+                <meter value="92" min="0" max="100" low="40" high="90" optimum="100" ></meter>
+                <label for="">Deixe seu comentario</label>
+                <br>
+                <textarea name="message" id="" placeholder="Comente aqui" rows="8" cols="20"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
