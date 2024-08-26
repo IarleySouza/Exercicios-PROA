@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Rampart;
+    src: url(../Rampart_One/RampartOne-Regular.ttf);
+}
+
+body {
+    background-color: aqua;
+    position: relative;
+}
+h1 {
+    font-family: Rampart;
+    font-weight: normal;
+    text-align: center;
+}
+main {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid transparent;
+    width: 40%;
+    height: 40%;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+    margin: auto;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
