@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mc donalds</title>
+</head>
+<body>
+    <h1>Faça seu pedido aqui!</h1>
+    <script>
+        let combo = parseFloat(prompt('Entre com um numero de 1 á 5 para acessar o combo.'))
+        document.write(`Combo de número: ${combo} escolhido. <br>`)
+        switch (combo) {
+            case 1:
+                document.write('Hambúrguer com salada e peito de frango.<br> Coca de 2 Litros. 🧃<br> Batata Media. 🥔')
+                break
+            case 2:
+                document.write('Hambúrguer com 5 picles e 2 fatias de presunto. <br>Coca de 100ml. <br>Batata recheada com molho branco.')
+                break
+            case 3:
+                document.write('Hambúrguer artesanal feito pelas mãos da vovó. <br>Suco de Uva. <br> Pé de galinha.')
+                break
+            case 4:
+                document.write('Hambúrguer bom demais. <br> Coca 2ml. <br> Pescoço de galinha.')
+                break
+            case 5:
+                document.write('Escolha outro. Fiquei sem ideias.')
+                break
+            default:
+                alert('[ERRO] Não existe esse combo.')
+        
+        }
+    </script>
+</body>
+</html>

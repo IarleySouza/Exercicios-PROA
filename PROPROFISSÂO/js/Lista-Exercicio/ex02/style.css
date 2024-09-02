@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(75, 75, 131);
+    font: normal 13pt arial;
+}
+
+section {
+    background-color: white;
+    color: white;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.274);
+    border-radius: 10px;
+}
+div {
+    color: black;
+}
+header {
+    color: white;
+    text-align: center;
+}
+#pri {
+    padding-top: 20px;
+}
+input[type=number] {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+input[type=button] {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
