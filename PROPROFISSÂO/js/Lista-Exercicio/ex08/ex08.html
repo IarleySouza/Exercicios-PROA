@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IPI</title>
+</head>
+<body>
+    <h1>IPI</h1>
+    <script>
+        let valor1 = parseFloat(prompt('Digite o primeiro numero: '))
+        let quant1 = parseFloat(prompt('Digite a quantidade: '))
+        let valor2 = parseFloat(prompt('Digite o segundo numero'))
+        let quant2 = parseFloat(prompt('Digite a quantidade do segundo numero: '))
+        let IPI = parseFloat(prompt('Digite o valor da IPI: '))
+
+        let calculo = (valor1*quant1 + valor2*quant2)*(IPI/100 + 1)
+
+        document.write(`O calculo da IPI: ${calculo}`)
+    </script>
+</body>
+</html>
