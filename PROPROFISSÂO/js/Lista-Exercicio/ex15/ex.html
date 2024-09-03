@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Escreva um programa que leia a idade de 20 pessoas e exiba a soma das idades.  -->
+    
+    <script>
+        let soma = 0;
+        let idade;
+        for (let cont = 1; cont <= 20; cont++) {
+            idade = parseInt(prompt('Digite sua idade: '))
+            soma += idade
+        }
+        document.write(`A soma das idades é ${soma}.`)
+    </script>
+</body>
+</html>

@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Usuario</h1>
+
+    <script>
+        let usu;
+        let soma = 0;
+        for (var cont = 1; cont <= 10; cont ++) {
+            usu = parseFloat(prompt(`Digite o ${cont} numero: `))
+            soma = soma + usu
+        }
+        document.write(`A soma dos numeros é ${soma}.`)
+    </script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let cont = 0
+        for (var i = 1; i <= 20; i++) {
+            let idade = parseFloat(prompt('Digite sua idade: '))
+            if (idade > 18) {
+                cont += 1
+            }
+        }
+        document.write(`${cont} pessoas são maiores de idade.`)
+    </script>
+</body>
+</html>
