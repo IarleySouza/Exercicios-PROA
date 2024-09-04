@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- Escreva um programa que leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova -->
+    <script>
+        let menor = 0;
+        let nomeNovo = '';
+        for (var i = 1; i <= 2; i++) {
+            let nome = prompt(`Digite o nome da ${i} primeira pessoa. `)
+            let idade = parseInt(prompt(`Digite a idade da ${i} primeira pessoa. `))
+
+            if (idade > menor) {
+                menor = idade;
+                nomeNovo = nome;
+            }
+        }
+
+        document.write(` a pessoa mais nova tem ${menor} anos, e se chama: ${nomeNovo}`)
+        
+    </script>
+</body>
+</html>

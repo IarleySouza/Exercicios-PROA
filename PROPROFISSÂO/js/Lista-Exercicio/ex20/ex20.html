@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Escreva um programa que leia 20 números do usuário e exiba quantos números são maiores do que 8.  -->
+
+    <script>
+
+        let maior = 0;
+
+        for (var i = 1; i <= 20; i++) {
+            let idade = parseFloat(prompt('Digite sua idade, por favor! '))
+            if (idade > 8) {
+                maior++
+            }
+        }
+        document.write(`Exitem ${maior} pessoas maiores de 8 anos.`)
+
+    </script>
+</body>
+</html>
