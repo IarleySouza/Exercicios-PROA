@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- - Faça um programa que leia 20 números e, ao final, escreva quantos estão entre 0 e 100, quantos estão entre 101 e 200 e quantos são maiores de 200. -->
+
+    <script>
+        let primeiro = 0
+        let segundo = 0
+        let terceiro = 0
+        for (var i = 1; i <= 3; i++) {
+            let numero = parseInt(prompt('Digite um numero: '));
+
+            if (0 < numero <= 100) {
+                primeiro ++
+            }else if (101 > numero < 200) {
+                segundo ++
+            }else if (numero > 200) {
+                terceiro ++
+            }
+        }
+        document.write(`Existem ${primeiro} numeros entre 0 e 100, ${segundo} numeros entre 101 e 200 e ${terceiro} numeros maiores que 200.`)
+
+    </script>
+</body>
+</html>
