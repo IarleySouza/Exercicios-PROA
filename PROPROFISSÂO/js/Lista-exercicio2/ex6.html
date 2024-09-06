@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop "while". -->
+
+    <script>
+        let numero = parseInt(prompt('Digite um numero para saber seu divisor. '))
+        if (numero <= 0) {
+            document.write('Por favor, digite um numero inteiro positivo. ')
+        }
+        else {
+            let div = 1
+
+            while (div <= numero) {
+                if (numero % div == 0) {
+                    document.write(`Os divisores desse numero são: ${div} <br>`);
+                }
+                div++
+            }
+        }
+    </script>
+</body>
+
+</html>

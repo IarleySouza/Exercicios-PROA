@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Testando o comando FOR</h1>
+    <div>
+        <input type="number" name="tab" id="tab">
+        <input type="button" value="calcular" onclick="calcular()">
+    </div>
+    <div id="ta">
+
+    </div>
+
+
+    <script>
+
+        function calcular() {
+            let tabuada = document.getElementById('tab');
+            let apertar = document.getElementById('ta');
+            
+            for (var c = 1; c <= 10; c++) {
+                let mul = Number(tab.value);
+                apertar.innerHTML += `${mul} X ${c} = ${mul*c} <br>`
+                
+            }
+        }
+    </script>
+</body>
+
+</html>
