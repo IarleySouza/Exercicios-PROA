@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="fundo">
+    <h1>Testando mudança de cor de fundo Body, a cor da fonte e a imagem na página</h1>
+
+    <input type="button" value="cor verde" onclick="verde()">
+    <input type="button" value="cor azul" onclick="azul()">
+    <input type="button" value="cor original" onclick="original()">
+
+    <hr>
+
+    <img src="images/fundo 1.jpg" alt="sol" class="myImage">
+
+    <script>
+        function verde() {
+            document.querySelector(".fundo").style.backgroundColor = 'green'
+            document.querySelector(".fundo").style.color = 'white'
+            document.querySelector(".myImage").src="images/sol.jpg"
+        }
+        function azul() {
+            document.querySelector(".fundo").style.backgroundColor = 'blue'
+            document.querySelector(".fundo").style.color = 'yellow'
+            document.querySelector(".myImage").src="images/imagem4 1.jpg"
+        }
+        function original() {
+            document.querySelector(".fundo").style.backgroundColor = 'bisque'
+            document.querySelector(".fundo").style.color = '#000'
+            document.querySelector(".myImage").src="images/fundo 1.jpg"
+        }
+    </script>
+</body>
+</html>

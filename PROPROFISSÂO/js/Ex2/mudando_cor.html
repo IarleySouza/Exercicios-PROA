@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #fff;
+            color: #450404;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .myImage {
+            width: 500px;
+            height: 380px;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body class="fundo">
+    <h1 id="h1">Testando mudança de cor de fundo Body, a cor da fonte a imagem na página</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum deserunt libero unde suscipit sed ducimus, delectus blanditiis necessitatibus mollitia est voluptates possimus aspernatur vitae quas aut nulla in animi dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sequi minima ipsa quia et quaerat vero rerum assumenda culpa unde ducimus debitis, eius expedita totam pariatur recusandae rem quibusdam? Similique!</p>
+
+    <input type="button" value="modo escuro" onclick="escuro()">
+    <input type="button" value="modo daltonico" onclick="daltonico()">
+    <input type="button" value="modo normal" onclick="normal()">
+    <input type="button" value="A+"  onclick="aumentar()">
+
+    <hr>
+
+    <img src="images/sol.jpg" alt="imagem" class="myImage">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repellat voluptate ipsam quod perferendis? Optio veritatis, eius adipisci sapiente unde doloribus voluptate, officiis incidunt fuga blanditiis id. In, sapiente temporibus?
+    Ipsa autem quae optio earum incidunt animi minus nam! Optio aut perferendis accusantium deserunt vel voluptates odio unde voluptate magni, quo, inventore assumenda! Eius optio facilis tempora repellendus doloremque vel?</p>
+
+    <script>
+        function escuro() {
+            h1.innerHTML = 'Testando Modo Escuro'
+            document.body.style.backgroundColor = 'black'
+            document.body.style.color = 'white'
+            document.body.style.fontSize = '16px'
+            document.querySelector('.myImage').src="images/fundo 1.jpg"
+            
+        }
+        function daltonico() {
+            h1.innerHTML = 'Testando Modo Daltonico'
+            document.body.style.backgroundColor = 'purple'
+            document.body.style.color = 'green '
+            document.body.style.fontSize = '16px'
+            document.querySelector('.myImage').src=" images/imagem4 1.jpg"
+        }
+        function normal() {
+            h1.innerHTML = 'Testando mudança de cor de fundo Body, a cor da fonte a imagem na página'
+            document.body.style.backgroundColor = '#fff'
+            document.body.style.color = '#000'
+            document.body.style.fontSize = '16px'
+            document.querySelector('.myImage').src="images/sol.jpg"
+            
+
+        }
+        function aumentar() {
+            document.body.style.fontSize = '2em'
+        }
+        
+    </script>
+</body>
+</html>
