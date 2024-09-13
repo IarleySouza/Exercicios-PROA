@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Escreva um programa que leia um número inteiro e exiba a soma de todos os números pares entre 1 e o número lido usando o loop "while".</h2>
+
+    <script>
+
+        let num = parseInt(prompt("Digite um numero: "));
+        let cont = 1, soma = 0;
+        while (cont <= num) {
+            if(cont % 2 == 0) {
+                soma += cont
+            }
+            cont++
+        }document.write(`A soma dos números pares entre 1 e ${num} é: ${soma}`)
+
+    </script>
+</body>
+</html>

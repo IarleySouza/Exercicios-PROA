@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nome e a media das idades</h1>
+
+    <script>
+        let cont = 0
+        let soma = 0
+        let nome;
+        let idade;
+        while (cont <= 5) {
+            idade = parseInt(prompt("Digite sua idade: "));
+            nome = prompt("Digite seu nome: ")
+            
+
+            
+            soma += idade
+            cont ++
+        }
+        document.write(`A media das idades é ${soma/cont}`);
+
+    </script>
+</body>
+</html>
