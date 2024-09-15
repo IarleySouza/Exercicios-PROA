@@ -8,19 +8,85 @@
 <body>
     <!-- Escreva um programa que leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova -->
     <script>
-        let menor = 0;
-        let nomeNovo = '';
-        for (var i = 1; i <= 2; i++) {
-            let nome = prompt(`Digite o nome da ${i} primeira pessoa. `)
-            let idade = parseInt(prompt(`Digite a idade da ${i} primeira pessoa. `))
+        let nome1 = prompt("Digite o seu nome: ");
+        let idade1= parseInt(prompt("Digite sua idade: "));
 
-            if (idade > menor) {
-                menor = idade;
-                nomeNovo = nome;
-            }
+        let nome2 = prompt("Digite o seu nome: ");
+        let idade2= parseInt(prompt("Digite sua idade: "));
+
+        let nome3 = prompt("Digite o seu nome: ");
+        let idade3= parseInt(prompt("Digite sua idade: "));
+
+        let nome4 = prompt("Digite o seu nome: ");
+        let idade4= parseInt(prompt("Digite sua idade: "));
+
+        let nome5 = prompt("Digite o seu nome: ");
+        let idade5 = parseInt(prompt("Digite sua idade: "));
+
+        let nome6 = prompt("Digite o seu nome: ");
+        let idade6 = parseInt(prompt("Digite sua idade: "));
+
+        let nome7 = prompt("Digite o seu nome: ");
+        let idade7 = parseInt(prompt("Digite sua idade: "));
+
+        let nome8 = prompt("Digite o seu nome: ");
+        let idade8 = parseInt(prompt("Digite sua idade: "));
+
+        let nome9 = prompt("Digite o seu nome: ");
+        let idade9 = parseInt(prompt("Digite sua idade: "));
+
+        let nome10 = prompt("Digite o seu nome: ");
+        let idade10 = parseInt(prompt("Digite sua idade: "));
+
+        let maisNovaN = nome1;
+        let maisNovaI = idade1;
+
+        if (idade2 < maisNovaI) {
+            maisNovaI = idade2;
+            maisNovaN = nome2;
+        }
+        
+        if (idade3 < maisNovaI) {
+            maisNovaI = idade3;
+            maisNovaN = nome3;
+        }
+        
+        if (idade4 < maisNovaI) {
+            maisNovaI = idade4;
+            maisNovaN = nome4;
+        }
+        
+        if (idade5 < maisNovaI) {
+            maisNovaI = idade5;
+            maisNovaN = nome5;
+        }
+        
+        if (idade6 < maisNovaI) {
+            maisNovaI = idade6;
+            maisNovaN = nome6;
+        }
+        
+        if (idade7 < maisNovaI) {
+            maisNovaI = idade7;
+            maisNovaN = nome7;
+        }
+        
+        if (idade8 < maisNovaI) {
+            maisNovaI = idade8;
+            maisNovaN = nome8;
+        }
+        
+        if (idade9 < maisNovaI) {
+            maisNovaI = idade9;
+            maisNovaN = nome9;
+        }
+        if (idade10 < maisNovaI) {
+            maisNovaI = idade10;
+            maisNovaN = nome10;
         }
 
-        document.write(` a pessoa mais nova tem ${menor} anos, e se chama: ${nomeNovo}`)
+
+        document.write(` a pessoa mais nova tem ${maisNovaI} anos, e se chama: ${maisNovaN}`)
         
     </script>
 </body>
