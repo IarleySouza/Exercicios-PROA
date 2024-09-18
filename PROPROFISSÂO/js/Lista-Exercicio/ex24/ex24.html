@@ -10,15 +10,12 @@
 
     <script>
         let soma = 0
-        let numero;
+        let numero = parseInt(prompt('Digite numero: ')) ;
         while (numero >= 0) {
-            numero = parseInt(prompt('Digite numero'))
-            if (numero >= 0) {
-                soma += numero
-            }
+            soma += numero
+            numero = parseInt(prompt('Digite numero: '))
         }
-        document.write("A soma dos numeros é: " + soma)
-        document.write('Fim do programa!')
+        document.write("A soma dos numeros é: " + soma + "<br>")
     </script>
 </body>
 </html>

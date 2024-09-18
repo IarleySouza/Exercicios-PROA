@@ -1,0 +1,155 @@
+<html>
+
+</html>
+
+<head>
+    <title>ViaCEP Webservice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Adicionando Javascript -->
+    <script>
+
+        const naturalidade = {
+            RO: "Rondoniano",
+            AC: "Acreano",
+            AM: "Amazonense",
+            RR: "Roraimense",
+            PA: "Paraibano",
+            AP: "Amapaense",
+            TO: "Tocantinense",
+            MA: "Maranhense",
+            PI: "Piauiense",
+            CE: "Cearense",
+            RN: "Potiguar",
+            PB: "Paraibano",
+            PE: "Pernambucano",
+            AL: "Alagoano",
+            SE: "Sergipano",
+            BA: "Baiano",
+            MG: "Mineiro",
+            ES: "Capixaba",
+            RJ: "Fluminense",
+            SP: "Paulista",
+            PR: "Paraense",
+            SC: "Catarinense",
+            RS: "Gaúcho",
+            MS: "Sul-mato-grossense",
+            MT: "Mato-grossense",
+            GO: "Goiano",
+            DF: "Brasiliense",
+        };
+
+        function limpa_formulário_cep() {
+            document.getElementById('rua').value = ("");
+            document.getElementById('bairro').value = ("");
+            document.getElementById('cidade').value = ("");
+            document.getElementById('uf').value = ("");
+            document.getElementById('natu').value = "";
+            document.getElementById('mensagemEstado').innerText = "";
+        }
+
+        function meu_callback(conteudo) {
+            if (!("erro" in conteudo)) {
+                //Atualiza os campos com os valores.
+                document.getElementById('rua').value = (conteudo.logradouro);
+                document.getElementById('bairro').value = (conteudo.bairro);
+                document.getElementById('cidade').value = (conteudo.localidade);
+                document.getElementById('uf').value = (conteudo.uf);
+
+                const estado = conteudo.uf;
+                document.getElementById('natu').value = naturalidade[estado] || "";
+            } //end if.
+            else {
+                //CEP não Encontrado.
+                limpa_formulário_cep();
+                alert("CEP não encontrado.");
+            }
+        }
+
+        function pesquisacep(valor) {
+
+            //Nova variável "cep" somente com dígitos.
+            var cep = valor.replace(/\D/g, '');
+
+            //Verifica se campo cep possui valor informado.
+            if (cep != "") {
+                var validacep = /^[0-9]{8}$/;
+
+                if (validacep.test(cep)) {
+                    //Preenche os campos com "..." enquanto consulta webservice.
+                    document.getElementById('rua').value = "...";
+                    document.getElementById('bairro').value = "...";
+                    document.getElementById('cidade').value = "...";
+                    document.getElementById('natu').value = "";
+                    document.getElementById('uf').value = "...";
+
+                    //Cria um elemento javascript.
+                    var script = document.createElement('script');
+
+                    //Sincroniza com o callback.
+                    script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback';
+
+                    //Insere script no documento e carrega o conteúdo.
+                    document.body.appendChild(script);
+
+                } //end if.
+                else {
+                    //cep é inválido.
+                    limpa_formulário_cep();
+                    alert("Formato de CEP inválido.");
+                }
+            } //end if.
+            else {
+                //cep sem valor, limpa formulário.
+                limpa_formulário_cep();
+            }
+        };
+
+    </script>
+</head>
+
+<body>
+    <form method="get" action=".">
+        <label>Nome:
+            <input type="text" name="nome" id="nome" required>
+        </label><br><br>
+        
+        <label>Data de nascimento:
+            <input type="date" name="nascimento" id="nascimento" required>
+        </label><br><br>
+        
+        <label>CPF:
+            <input type="text" name="cpf" id="cpf" maxlength="11" size="11" required>
+        </label><br><br>
+        
+        <label>CEP:
+            <input name="cep" type="text" id="cep" maxlength="9" size="10" onblur="pesquisacep(this.value);" required>
+        </label><br><br>
+        
+        <label>Rua:
+            <input name="rua" type="text" id="rua" size="60" required />
+        </label><br><br>
+        
+        <label>N°:
+            <input type="number" name="numero" id="numero" required>
+        </label><br><br>
+        
+        <label>Bairro:
+            <input name="bairro" type="text" id="bairro" size="40" required />
+        </label><br><br>
+        
+        <label>Cidade:
+            <input name="cidade" type="text" id="cidade" size="40" required />
+        </label><br><br>
+        
+        <label>Estado:
+            <input name="uf" type="text" id="uf" size="2" required />
+        </label><br><br>
+        
+        <label>Naturalidade:
+            <input type="text" name="natu" id="natu">
+        </label><br><br>
+
+        <button type="submit">Enviar</button>
+</body>
+
+</html>
