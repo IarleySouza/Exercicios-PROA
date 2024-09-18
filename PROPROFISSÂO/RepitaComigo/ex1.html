@@ -13,7 +13,10 @@
 
         let num1 = parseInt(prompt("Digite um numero: "))
         let num2 = parseInt(prompt("Digite outro numero: "))
-
+        while (num2 <= 0) {
+            num2 = parseInt(prompt("Tente novamente! com um valor positivo ou maior que zero."))
+        }
+        document.write("A divisão do primeiro numero pelo segundo é: " + num1/num2);
     </script>
 </body>
 </html>

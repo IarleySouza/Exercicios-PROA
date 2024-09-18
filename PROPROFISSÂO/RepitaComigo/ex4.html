@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 1</title>
 </head>
+
 <body>
 
-    <!-- 1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor. -->
+    <!-- Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive). -->
 
     <script>
 
-        let num1 = parseInt(prompt("Digite um numero: "))
-        let num2 = parseInt(prompt("Digite outro numero: "))
-
+        let cont = 0, soma = 0;
+        for (let c = 15; c <= 100; c++) {
+            cont++
+            soma += c
+        }
+        document.write(`${(soma / cont).toFixed(2)}`)
+        
     </script>
 </body>
+
 </html>
