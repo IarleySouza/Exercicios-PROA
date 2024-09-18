@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "while". -->
     <h1>Numero impar</h1>
 
     <script>
-        let numero = parseInt(prompt('Digite um numero para saber seu divisor. '))
 
-        if (numero <= 1) {
-            document.write("não é primo. ")
-        }else {
-            let n = 2;
-            
-        }
+        let numero = parseInt(prompt("Digite um número: "));
+
+            let divisor = 4;
+            while (divisor <= (numero / 2)) {
+                if (numero % divisor == 0) {
+                    document.write(`${numero} não é um número primo.`);
+                    break;
+                }   
+                divisor++;
+            }
+            if (divisor > (numero / 2)) {
+                document.write(`${numero} é um número primo.`);
+            }
+
     </script>
 </body>
+
 </html>
