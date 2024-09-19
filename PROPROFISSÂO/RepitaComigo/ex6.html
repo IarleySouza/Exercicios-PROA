@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 1</title>
 </head>
+
 <body>
 
     <!-- 6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados. -->
 
     <script>
-
+        let cont = 0
         let num1 = parseInt(prompt("Digite um numero: "))
         let num2 = parseInt(prompt("Digite outro numero: "))
 
+        let media = (num1 / num2) / 2
+        let resposta = prompt("Calcular media de outro aluno [SIM/NÃO]? ").toUpperCase()
+        while (resposta != 'NAO'.toLocaleUpperCase()) {
+            num1 = parseInt(prompt("Digite um numero: "))
+            num2 = parseInt(prompt("Digite outro numero: "))
+            media = (num1 / num2) / 2
+            if (media >= 9.5) {
+                cont++
+            }
+            resposta = prompt("Calcular media de outro aluno [SIM/NÃO]? ").toUpperCase()
+        }
+        document.write(`A quantidade de alunos aprovados: ${cont}`)
+
     </script>
 </body>
+
 </html>

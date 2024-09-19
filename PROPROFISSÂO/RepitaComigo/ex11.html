@@ -12,9 +12,16 @@
     <!-- 11 - Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo. -->
 
     <script>
-
-        let num1 = parseInt(prompt("Digite um numero: "))
-        let num2 = parseInt(prompt("Digite outro numero: "))
+        let cont = 0, dife = 0;
+        for (c = 1; c <= 10; c++) {
+            let num = parseInt(prompt("Digite um numero: "))
+            if(num >= 24 && num <= 42) {
+                cont++
+            }else {
+                dife++
+            }
+        }document.write(`${cont} números estão entre 24 e 42 <br>`)
+        document.write(`${dife} números estão fora desse intervalo. `)
 
     </script>
 </body>

@@ -10,10 +10,13 @@
     <!-- Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário. -->
 
     <script>
-
-        let num1 = parseInt(prompt("Digite um numero: "))
-        let num2 = parseInt(prompt("Digite outro numero: "))
-
+        let n = parseInt(prompt("Digite um numero para ver sua tabuada."))
+        for (let c = 1; c <= n; c++) {
+            document.write(`Tabuada do ${c}: <br>`);
+            for (let j = 1; j <= 10; j++) {
+                document.write(`${c} x ${j} = ${c * j} <br>`);
+            }
+        }
     </script>
 </body>
 </html>
