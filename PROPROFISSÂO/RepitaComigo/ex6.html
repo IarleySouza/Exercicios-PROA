@@ -11,24 +11,24 @@
 
     <!-- 6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados. -->
 
+    <h1>Calculando a media</h1>
+
     <script>
-        let cont = 0
-        let num1 = parseInt(prompt("Digite um numero: "))
-        let num2 = parseInt(prompt("Digite outro numero: "))
+        let cont = 0, resposta;
 
-        let media = (num1 / num2) / 2
-        let resposta = prompt("Calcular media de outro aluno [SIM/NÃO]? ").toUpperCase()
-        while (resposta != 'NAO'.toLocaleUpperCase()) {
-            num1 = parseInt(prompt("Digite um numero: "))
-            num2 = parseInt(prompt("Digite outro numero: "))
-            media = (num1 / num2) / 2
+        do {
+            let num1 = parseFloat(prompt("Digite a primeira nota: "));
+            let num2 = parseFloat(prompt("Digite a segunda nota: "));
+            let media = (num1 + num2) / 2;
+
             if (media >= 9.5) {
-                cont++
+                cont++;
             }
-            resposta = prompt("Calcular media de outro aluno [SIM/NÃO]? ").toUpperCase()
-        }
-        document.write(`A quantidade de alunos aprovados: ${cont}`)
 
+            resposta = prompt("Calcular a média de outro aluno [SIM/NÃO]?").toUpperCase();
+        } while (resposta === 'SIM');
+
+        document.write(`A quantidade de alunos aprovados: ${cont}`);
     </script>
 </body>
 

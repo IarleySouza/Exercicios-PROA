@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 1</title>
 </head>
+
 <body>
 
     <!-- 7 - Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
@@ -12,9 +14,24 @@ Caso o valor informado para qualquer uma das notas esteja fora do limite estabel
 
     <script>
 
-        let num1 = parseInt(prompt("Digite um numero: "))
-        let num2 = parseInt(prompt("Digite outro numero: "))
+        let soma = 0, nota;
+
+        for (let c = 0; c < 6; c++) {
+            do {
+                nota = parseInt(prompt("Informe a nota " + (c + 1) + " (0 a 10):"));
+                if (nota < 0 || nota > 10) {
+                    alert("Nota inválida. Deve estar entre 0 e 10.");
+                }
+            } while (nota < 0 || nota > 10);
+
+            soma += nota;
+        }
+        let media = soma / 6;
+
+        document.write("A média do aluno é: " + media.toFixed(2));
+
 
     </script>
 </body>
+
 </html>
