@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let drofo = [" anel da invisibilidade", " um par de botas mágicas", " um par de botas mágicas", " uma poção do sono", " poção da inocência"," poção da inocência" ]
+
+        let torper = [" capa da invisibilidade", " capa da invisibilidade", " varinha das varinhas", " uma poções da inocência", "poção da mentira", "poção da mentira", " poção anti-inteligência"]
+
+        document.write(`<br><strong>Começo da Historia:
+        </strong>`)
+        document.write(`<br><br><strong>Iventario do Drofo:</strong></br><br> ${drofo.join("<br>")}`)
+
+        document.write(`<br><br><strong>Iventario do Torper:</strong></br><br> ${torper.join("<br>")}`)
+
+        //torper consumiu uma das poções da mentira
+        document.write("<br><h3>No meio de sua jornada, Torper consumiu uma das poções da mentira, perdeu sua pedra e ganhou um par de botar mágicas do Drofo, achou um escudo mágico e uma espada mágica.</h3>")
+        //Torper consumiu uma das poções da mentira
+        torper.splice(3,1)
+
+        //ganhou um par de botar mágicas do Drofo
+        drofo.splice(1, 1)
+
+        //
+        torper.splice(4, 1)
+        torper.push("escurdo mágico", "espada mágica")
+        document.write(`<br><br><strong>Iventario do Torper:</strong></br><br> ${torper.join("<br>")}`)
+        document.write(`<br><br><strong>Iventario do Drofo:</strong></br><br> ${drofo.join("<br>")}`)
+
+
+        document.write("<br><h3> No meio da sua jornada, Drofo, ganhou mais uma bota mágica, usou sua poção do sono e consumiu a poção anti-inteligência do Torper, encontrou um ovo de dragão e uma coxinha.</h3>")
+
+        drofo.push("uma bota mágica", "ovo de dragão", "uma coxinha")
+        drofo.splice(3, 1)
+        torper.splice(4, 1)
+        drofo.splice(2,1)
+        document.write(`<br><br><strong>Iventario do Torper:</strong></br><br> ${torper.join("<br>")}`)
+        document.write(`<br><br><strong>Iventario do Drofo:</strong></br><br> ${drofo.join("<br>")}`)
+    </script>
+</body>
+</html>
