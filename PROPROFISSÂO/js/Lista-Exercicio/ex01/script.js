@@ -1,6 +1,4 @@
 
-
-
 let prato = parseFloat(prompt('Imforme o prato: \n[1]Vegetariano - 180 cal \n[2]Peixe - 230 cal \n[3]Frango - 250 cal\n[4] Carne - 350 cal'))
 let pra = 0
 switch (prato) {
