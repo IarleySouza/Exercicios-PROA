@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>23 - Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "do-while".</h3>
+    <script>
+
+        let num = parseInt(prompt('Digite um número: '));
+        if (num <= 0) {
+            document.write('Por favor, digite um numero inteiro positivo. ');
+        } else {
+            let a = 0;
+            let b = 1;
+
+            do {
+                document.write(`${a}\n`);
+                let c = a + b;
+                a = b;
+                b = c;
+            }while(a <= num)
+        }
+    </script>
 </body>
 </html>
