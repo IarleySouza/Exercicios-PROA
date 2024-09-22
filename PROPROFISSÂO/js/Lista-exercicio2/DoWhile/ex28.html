@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>28 - Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "do-while".</h3>
+    <script>
+        let numero = prompt("Digite um numero: ")
+        let cont = 0
+        document.write("Os numeros separados são: ")
+        while(cont < numero.length) {
+            document.write(`${numero[cont]}\n`)
+            cont ++
+        }
+
+    </script>
 </body>
 </html>
