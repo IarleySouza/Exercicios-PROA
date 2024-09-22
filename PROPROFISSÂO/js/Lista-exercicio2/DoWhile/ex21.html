@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>21 - Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop "do-while".</h3>
+
+    <script>
+        let numero = parseInt(prompt('Digite um numero para saber seu divisor. '))
+        if (numero <= 0) {
+            document.write('Por favor, digite um numero inteiro positivo. ')
+        }
+        else {
+            let div = 1
+
+            do{
+                if (numero % div == 0) {
+                    document.write(`Os divisores desse numero são: ${div} <br>`);
+                }
+                div++
+            }while (div <= numero)
+        }
+    </script>
 </body>
 </html>

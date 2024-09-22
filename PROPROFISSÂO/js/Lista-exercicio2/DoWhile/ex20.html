@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>while(num <= 5)</h3>
+    <h3>20 - Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor usando o loop "do-while".</h3>
+
+    <script>
+
+        let num = 1
+        let tabuada = parseFloat(prompt('Digite um numero para saber sua tabuada. '))
+        do {
+            document.write(`${tabuada} x ${num} = ${tabuada*num}<br>`)
+            num++
+        }while (num <= 10)
+
+    </script>
 </body>
 </html>
