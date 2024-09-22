@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>22 - Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "do-while".</h3>
+    <script>
+
+        let numero = parseInt(prompt("Digite um número: "));
+
+            let divisor = 2;
+            do {
+                if (numero % divisor == 0) {
+                    document.write(`${numero} não é um número primo.`);
+                    break;
+                }
+                divisor++;
+            }while (divisor <= (numero / 2))
+            if (divisor > (numero / 2)) {
+                document.write(`${numero} é um número primo.`);
+            }
+
+    </script>
 </body>
 </html>
