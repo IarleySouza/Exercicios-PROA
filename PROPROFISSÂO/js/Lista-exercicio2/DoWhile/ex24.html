@@ -6,6 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>24 - Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "do-while" e exiba a média das idades.</h3>
+    <script>
+        let cont = 0
+        let soma = 0
+        let nome;
+        let idade;
+        do {
+            idade = parseInt(prompt("Digite sua idade: "));
+            nome = prompt("Digite seu nome: ")
+            soma += idade
+            cont ++
+        }while (cont <= 5)
+        document.write(`A media das idades é ${soma/cont}`);
+
+    </script>
 </body>
 </html>
