@@ -6,6 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>19 - Faça um programa que leia 5 números inteiros usando o loop "do-while" e exiba a média aritmética dos valores lidos.</h3>
+
+    <script>
+
+        let num = 1
+        let soma = 0
+        do {
+            let numero = parseFloat(prompt('Digite um numero'))
+            soma += numero
+            num++
+        } while(num <= 5)
+        let media = soma / 5
+        document.write(`A media dos numeros é ${media}`)
+
+    </script>
 </body>
 </html>

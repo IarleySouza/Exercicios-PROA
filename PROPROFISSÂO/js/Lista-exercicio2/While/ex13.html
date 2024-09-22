@@ -11,15 +11,14 @@
     <h3>Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "while".
     </h3>
     <script>
-        let numero = parseInt(prompt("Digite um número inteiro:"));
-
-        while (numero > 0) {
-            let digito = numero % 10;
-            // Exibe o dígito
-            document.write(digito);
-            // Remove o último dígito do número convertendo-o para string e removendo o último caractere
-            numero = parseInt(numero / 10);
+        let numero = prompt("Digite um numero: ")
+        let cont = 0
+        document.write("Os numeros separados são: ")
+        while(cont < numero.length) {
+            document.write(`${numero[cont]}\n`)
+            cont ++
         }
+
     </script>
 </body>
 

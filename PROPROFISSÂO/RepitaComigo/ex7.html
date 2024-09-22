@@ -18,7 +18,7 @@ Caso o valor informado para qualquer uma das notas esteja fora do limite estabel
 
         for (let c = 0; c < 6; c++) {
             do {
-                nota = parseInt(prompt("Informe a nota " + (c + 1) + " (0 a 10):"));
+                nota = parseInt(prompt(`Informe a nota ${c + 1} (0 a 10): `));
                 if (nota < 0 || nota > 10) {
                     alert("Nota inválida. Deve estar entre 0 e 10.");
                 }
@@ -29,8 +29,6 @@ Caso o valor informado para qualquer uma das notas esteja fora do limite estabel
         let media = soma / 6;
 
         document.write("A média do aluno é: " + media.toFixed(2));
-
-
     </script>
 </body>
 
