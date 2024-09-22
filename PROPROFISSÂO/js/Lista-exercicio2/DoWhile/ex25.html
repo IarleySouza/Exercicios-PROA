@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>25 - Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci usando o loop "do-while".</h3>
+    <script>
+
+        let num = 20, cont = 0;
+        let a = 0, b = 1;
+
+        do {
+            document.write(`${a}\n`);
+            let c = a;
+            a = b;
+            b = c + b;
+            cont++
+        }while (cont <= num)
+    </script>
 </body>
 </html>
