@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h3>34 - Faça um programa que leia 5 números inteiros e exiba a média aritmética dos valores lidos.</h3>
+
+    <script>
+        let soma = 0
+        for(let c = 1; c <= 5; c++) {
+            let numero = parseFloat(prompt('Digite um numero'))
+            soma += numero
+        }
+        let media = soma / 5
+        document.write(`A media dos numeros é ${media}`)
+
+    </script>
+</body>
+</html>
