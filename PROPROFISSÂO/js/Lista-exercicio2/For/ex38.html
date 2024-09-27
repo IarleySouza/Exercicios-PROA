@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>38 - Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido.</h3>
+
+    <script>
+
+        let num = parseInt(prompt('Digite um número: '));
+        let a = 0;
+        let b = 1;
+
+        for (let a = 0; a <= num;) {
+            document.write(`${a}\n`);
+            let c = a + b;
+            a = b;
+            b = c;
+        }
+
+    </script>
+</body>
+
+</html>
