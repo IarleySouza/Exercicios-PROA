@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 5) Escreva um programa que leia 5 números inteiros e exiba o
+        maior e o menor valor digitado. </h1>
+
+        <script>
+            let numeros = [], maior = 0;
+            let menor = 0;
+
+            for(let i = 0; i < 5; i++) {
+                let numero = parseInt(prompt(`Digite o ${i+1} numero: `));
+                if(numero > maior) {
+                    maior = numero
+                }
+                if(numero < menor) {
+                    menor = numero
+                }
+            }
+            document.write(`Menor: ${menor} <br>Maior: ${maior}`)
+        </script>
+</body>
+</html>
